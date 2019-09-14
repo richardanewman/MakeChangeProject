@@ -9,19 +9,19 @@ This program simulates a cash transaction interface. The assignment required me 
 
 ### Tasks
 
-### C\#1
+### \#1
 Prompt attendant for item price.
 
-### C\#2
+### \#2
 User is then prompted to enter the amount tendered by the customer.
 
-### C\#3
+### \#3
 Give the attendant the correct change in denomination values: for example if .67 was the item price and the amount tendered 1.00, the program should output 1 quarter, 1 nickel, 3 pennies. Change should be provided using the largest bill and coin denominations as possible. Denominations that are not used should not be displayed.
 
-### C\#4
+### \#4
 Display an appropriate message if the customer provided too little money or the exact amount.
 
-### C\#5
+### \#5
 If the amount tendered is more than the cost of the item, display the number of bills and coins that should be given to the customer.
 
 
