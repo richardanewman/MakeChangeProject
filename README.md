@@ -36,7 +36,7 @@ HTTPS: https://github.com/richardanewman/MakeChangeProject.git
 
 ### Technologies/topics used
 
-Java & Eclipse IDE
+Java, Eclipse IDE, Git, Github
 
 
 ### Lessons
