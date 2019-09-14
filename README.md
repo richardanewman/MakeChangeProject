@@ -42,4 +42,4 @@ Java, Eclipse IDE, Git, Github
 ### Lessons
 
 Improved my understanding of method calls and passing arguments. Learned to test code often throughout coding process to avoid bugs and
-ensure proper expected output was being produced.
+ensure expected output was being produced.
