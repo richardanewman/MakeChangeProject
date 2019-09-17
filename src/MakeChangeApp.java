@@ -23,13 +23,14 @@ public class MakeChangeApp {
 		//escapes program if no change is required
 		if (price == tender) {
 			System.out.println("No change required!");
-			System.exit(0);
-		}
+
+		}else {
 		
 		tender = tender * 100;
 		price = price * 100;
 		makeChange((int) price, (int) tender);
 		kb.close();
+		}
 	}
 	//calculates proper change value per denomination, calls formatDisplayMessage and passes arguments
 	public static void makeChange(int price, int tender) {
