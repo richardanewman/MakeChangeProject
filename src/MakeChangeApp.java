@@ -25,12 +25,21 @@ public class MakeChangeApp {
 		if (price == tender) {
 			System.out.println("No change required!");
 
+<<<<<<< HEAD
 		} else {
 
 			tender = tender * 100;
 			price = price * 100;
 			makeChange((int) price, (int) tender);
 			kb.close();
+=======
+		}else {
+		
+		tender = tender * 100;
+		price = price * 100;
+		makeChange((int) price, (int) tender);
+		kb.close();
+>>>>>>> dad3081ff3c0f01273ef501cbad978f9e1eafeaa
 		}
 	}
 
