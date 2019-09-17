@@ -3,36 +3,39 @@ import java.util.Scanner;
 public class MakeChangeApp {
 
 	public static void main(String[] args) {
-		tender(); //Calls tender method which prompts user
+		tender(); // Calls tender method which prompts user
 
 	}
-	//tender prompts user, takes input, calls makeChange and passes arguments
+
+	// tender prompts user, takes input, calls makeChange and passes arguments
 	public static void tender() {
 		Scanner kb = new Scanner(System.in);
 		System.out.println("Please enter the price of the item: ");
 		double price = kb.nextDouble();
 		System.out.println("Please enter the amount you would like to tender: ");
 		double tender = kb.nextDouble();
-		
-		//ensures user tenders more money than price of item
+
+		// ensures user tenders more money than price of item
 		while (price > tender) {
 			System.out.println("Sorry you do not have enough to purchase this item.");
 			System.out.println("Please tender more cash.");
 			tender = kb.nextDouble();
 		}
-		//escapes program if no change is required
+		// escapes program if no change is required
 		if (price == tender) {
 			System.out.println("No change required!");
 
-		}else {
-		
-		tender = tender * 100;
-		price = price * 100;
-		makeChange((int) price, (int) tender);
-		kb.close();
+		} else {
+
+			tender = tender * 100;
+			price = price * 100;
+			makeChange((int) price, (int) tender);
+			kb.close();
 		}
 	}
-	//calculates proper change value per denomination, calls formatDisplayMessage and passes arguments
+
+	// calculates proper change value per denomination, calls formatDisplayMessage
+	// and passes arguments
 	public static void makeChange(int price, int tender) {
 		int change = tender - price;
 		int hundred = 0;
@@ -101,7 +104,8 @@ public class MakeChangeApp {
 //		return testing;
 
 	}
-	//formats display message
+
+	// formats display message
 	public static void formatDisplayMessage(int hundred, int fifty, int twenty, int ten, int five, int one, int quarter,
 			int dime, int nickel, int penny) {
 
